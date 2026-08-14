@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Galeria Tricolor - Grêmio</title>
+
+    <style>
+        /* =========================================
+           🎨 ÁREA DE ESTILOS (CSS) - TEMA GRÊMIO
+           ========================================= */
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* Fundo Azul Celeste suave */
+            background-color: #0080ff;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            /* Cabeçalho Preto com borda Azul Celeste */
+            background-color: #000000;
+            color: #ffffff;
+            border-bottom: 5px solid #0d80bf;
+        }
+
+        header h1 {
+            /* Título com cor Azul Celeste */
+            color: #0d80bf;
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+            text-shadow: 1px 1px 2px #ffffff;
+        }
+
+        header p {
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 2px solid #000000;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            color: #000000;
+            border-bottom: 2px solid #0d80bf;
+            padding-bottom: 5px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* --- Estilo do Botão de Curtida --- */
+        .like-btn {
+            /* Botão Azul Celeste */
+            background-color: #0d80bf;
+            color: white;
+            border: 1px solid #000000;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.1s;
+            width: 100%;
+        }
+
+        .like-btn:hover {
+            background-color: #005682;
+        }
+
+        /* Cor do botão QUANDO ESTIVER CURTIDO (Preto com letras brancas) */
+        .like-btn.liked {
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #0d80bf;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🇪🇪 Imortal Tricolor</h1>
+        <p>Bem-vindo à galeria dedicada ao Grêmio FBPA. Com o Gr
